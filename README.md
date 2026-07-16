@@ -88,7 +88,8 @@ _(Generate this with a short matplotlib script reading `log/log.txt` — worth i
 Sample generations:
 
 ```
-_paste 2-3 example completions from your generate() cell here_
+_(Generate this with a short matplotlib script reading `log/log.txt` — worth including since it's the single most persuasive image in the README: it's the visual proof the run actually worked.)_
+
 ```
 
 ## Weights
