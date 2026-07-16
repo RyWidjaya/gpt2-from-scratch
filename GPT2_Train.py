@@ -144,7 +144,7 @@ if use_compile:
 max_lr = 6e-4
 min_lr = max_lr * 0.1
 warmup_steps = 715 # match GPT-3 warmup schedule
-max_steps = 11444 #19073 # = 10e9 tokens we want to do / 2**19 tokens per step = 19073 steps
+max_steps = 19073 # = 10e9 tokens we want to do / 2**19 tokens per step = 19073 steps
 def get_lr(it):
     # 1) linear warmup for warmup_iters steps 
     if it < warmup_steps:
