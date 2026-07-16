@@ -198,11 +198,8 @@ for step in range(max_steps):
             with open(log_file, "a") as f:
                 f.write(f"{step} val {val_loss_accum.item():.4f}\n")
 
-            # ADDED: checkpoint saving, missing from the original version of this script.
-            # Andrej checkpoints every 5000 steps in his own script, but that's sized for his
-            # max_steps=19073 run. This script's max_steps=11444 is a shorter run, so checkpointing
-            # every 5000 steps would only produce ~2 checkpoints across the whole run -- thin protection
-            # against a Colab session disconnecting mid-training. Using every 1000 steps instead.
+            # ADDED: checkpoint saving, missing from the original version of this script. 
+            # checkpoints every 1000 steps to prevent losses when
             if step > 0 and (step % 1000 == 0 or last_step):
                 checkpoint_path = os.path.join(log_dir, f"model_{step:05d}.pt")
                 checkpoint = {
