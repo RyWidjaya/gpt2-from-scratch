@@ -83,15 +83,6 @@ Loss curve (train loss per step, val loss every 100 steps) plotted from `log.txt
 
 ![loss curve](loss_curve.png)
 
-_(Generate this with a short matplotlib script reading `log/log.txt` — worth including since it's the single most persuasive image in the README: it's the visual proof the run actually worked.)_
-
-Sample generations:
-
-```
-Generate this with a short matplotlib script reading `log/log.txt` — worth including since it's the single most persuasive image in the README: it's the visual proof the run actually worked.
-
-```
-
 ## Weights
 
 The final trained checkpoint (`model_02999.pt`, ~533MB) is **not stored directly in this git repo** — GitHub rejects regular pushes over 100MB, and even under that limit a repo full of binary checkpoints is bad practice (bloats every clone forever, since git never forgets old blob versions). Pick one:
